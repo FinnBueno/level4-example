@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/remindersFragment">
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.peakfinn.madlevel4example.RemindersFragment"
+        android:label="reminders_fragment"
+        tools:layout="@layout/reminders_fragment" >
+        <action
+            android:id="@+id/action_remindersFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.peakfinn.madlevel4example.AddReminderFragment"
+        android:label="add_reminder_fragment"
+        tools:layout="@layout/add_reminder_fragment" />
+</navigation>
